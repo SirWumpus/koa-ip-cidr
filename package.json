@@ -1,0 +1,67 @@
+{
+  "name": "koa-ip-cidr",
+  "version": "0.0.0",
+  "description": "Filter IPv4 and IPv6 addresses using IP/CIDR masks.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "jshint ./*.js",
+    "test": "mocha -R spec"
+  },
+  "publishConfig": {
+    "registry": "http://devtools.ssimicro.com:4873"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "ssh://git.ssimicro.com/git/postal.git"
+  },
+  "keywords": [
+    "koa",
+    "ip",
+    "cidr",
+    "filter"
+  ],
+  "author": "Anthony Howe <achowe@snert.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "ipaddr.js": "^1.9.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.10.2",
+    "koa": "^2.7.0",
+    "mocha": "^6.1.4",
+    "supertest": "^4.0.2"
+  },
+  "jshintConfig": {
+    "esversion": 8,
+    "bitwise": true,
+    "curly": true,
+    "eqeqeq": true,
+    "forin": true,
+    "freeze": true,
+    "globalstrict": true,
+    "immed": true,
+    "indent": 4,
+    "loopfunc": true,
+    "moz": true,
+    "newcap": true,
+    "noarg": true,
+    "node": true,
+    "noempty": true,
+    "nonew": true,
+    "trailing": true,
+    "undef": true,
+    "smarttabs": true,
+    "strict": true,
+    "validthis": true,
+    "globals": {
+      "describe": false,
+      "it": false,
+      "before": false,
+      "beforeEach": false,
+      "after": false,
+      "afterEach": false
+    }
+  }
+}
