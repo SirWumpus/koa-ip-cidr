@@ -3,17 +3,18 @@
   "version": "0.0.0",
   "description": "Filter IPv4 and IPv6 addresses using IP/CIDR masks.",
   "main": "index.js",
+  "author": {
+    "name": "Anthony Howe",
+    "email": "achowe@snert.com"
+  },
   "scripts": {
     "pretest": "jshint ./*.js",
     "test": "mocha -R spec test/*.test.js"
   },
-  "publishConfig": {
-    "registry": "http://devtools.ssimicro.com:4873"
-  },
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "ssh://git.ssimicro.com/git/postal.git"
+    "url": "git://github.com/SirWumpus/koa-ip-cidr.git"
   },
   "keywords": [
     "koa",
@@ -21,7 +22,6 @@
     "cidr",
     "filter"
   ],
-  "author": "Anthony Howe <achowe@snert.com>",
   "license": "MIT",
   "dependencies": {
     "debug": "^4.1.1",
