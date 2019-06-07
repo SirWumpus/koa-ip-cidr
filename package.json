@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "jshint ./*.js",
-    "test": "mocha -R spec"
+    "test": "mocha -R spec test/*.test.js"
   },
   "publishConfig": {
     "registry": "http://devtools.ssimicro.com:4873"
