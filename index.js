@@ -44,7 +44,13 @@ module.exports = function (opts) {
             return next();
         }
         debug(`${ctx.ip} blocked`);
-        ctx.throw(403);
+        if (opts.throw) {
+            ctx.throw(403, "client blocked");
+        }
+        // Set status, instead of throw, to work back through middleware
+        // stack post-processing the response, such as logging.
+        ctx.response.status = 403;
+        ctx.response.message = "client blocked";
     };
 };
 

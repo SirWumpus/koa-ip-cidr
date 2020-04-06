@@ -20,6 +20,7 @@ Usage
 * `options`;
   - `blacklist`: Optional array of IPv4 and/or IPv6 CIDR masks to reject.
   - `whitelist`: Optional array of IPv4 and/or IPv6 CIDR masks to allow.
+  - `throw`: Set true to throw an error instead of returning HTTP status 403.
   
 When `options` is not specified, then the default is `{ whitelist: [ "::1", "127.0.0.0/8" ] }`.
 
